@@ -7,8 +7,7 @@ GolyakOFF is a Flutter-based mobile application that allows users to track their
 - QR Code Scanner: Scan receipts using the built-in QR code scanner to extract the items purchased.
 - Item Categorization: Categorize the scanned items using a machine learning model to gain insights into spending habits.
 - Expense Tracking: Track and manage expenses by categorizing them into different categories.
-- Persistence: Store scanned data and categorized items locally using Hive database for easy access and retrieval.
-- User-Friendly Interface: Intuitive user interface for smooth navigation and seamless user experience.## Data Preparation
+- User-Friendly Interface: Intuitive user interface for smooth navigation and seamless user experience.
 
 ## Data Preparation
 
