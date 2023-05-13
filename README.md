@@ -18,6 +18,7 @@ To train the machine learning model for item categorization, the app relies on a
 3. The extracted product names and their corresponding categories were collected and stored in a list.
 4. The collected data was then converted into a pandas DataFrame.
 5. The DataFrame was saved as a CSV file named `product_category.csv`.
+![image](https://github.com/nochnik/Golyakoff/assets/51897676/052a4280-599a-4d1a-884d-92c1125385e8)
 
 The prepared dataset serves as the training data for the machine learning model and enables accurate categorization of scanned items.
 
