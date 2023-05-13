@@ -21,7 +21,7 @@ GolyakOFF is a Flutter-based mobile application that allows users to track their
 
 ## Getting Started
 
-To get started with the Financial Tracker App, follow these steps:
+To get started with the GolyakOFF App, follow these steps:
 
 1. Clone the repository:
 git clone https://github.com/nochnik/Golyakoff.git
