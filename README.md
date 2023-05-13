@@ -9,18 +9,30 @@ GolyakOFF is a Flutter-based mobile application that allows users to track their
 - Expense Tracking: Track and manage expenses by categorizing them into different categories.
 - User-Friendly Interface: Intuitive user interface for smooth navigation and seamless user experience.
 
-## Data Preparation
+## Data Preparation and Training
 
-To train the machine learning model for item categorization, the app relies on a prepared dataset. The dataset is created by parsing product data from various websites. The following steps were taken to prepare the dataset:
+1. Data Preparation:
+   - A dataset named `product_category.csv` is prepared, which contains the product names and their corresponding categories.
+   - The dataset is created by parsing product data from various websites using web scraping techniques.
+   - The Python script used for data preparation can be found in the `product_categoriser.ipynb` file.
+ 
+ 
+   ![image](https://github.com/nochnik/Golyakoff/assets/51897676/0e8dc7a3-09a4-4fd6-bbfd-d0b25ac8e5f3)
 
-1. The `bs4` library was used to scrape product data from several URLs, each corresponding to a specific category.
-2. The product data was extracted from the HTML using BeautifulSoup.
-3. The extracted product names and their corresponding categories were collected and stored in a list.
-4. The collected data was then converted into a pandas DataFrame.
-5. The DataFrame was saved as a CSV file named `product_category.csv`.
-![image](https://github.com/nochnik/Golyakoff/assets/51897676/052a4280-599a-4d1a-884d-92c1125385e8)
 
-The prepared dataset serves as the training data for the machine learning model and enables accurate categorization of scanned items.
+2. Model Training:
+   - The prepared dataset is loaded into a pandas DataFrame.
+   - The data is split into training and testing sets using `train_test_split`.
+   - The product names are converted into feature vectors using `CountVectorizer`.
+   - The categories are encoded using `LabelEncoder`.
+   - A logistic regression model is trained using the feature vectors and encoded categories.
+   - The model's accuracy and classification report are computed and printed.
+   - The trained model, vectorizer, and label encoder are saved using `joblib` for later use.
+
+![image](https://github.com/nochnik/Golyakoff/assets/51897676/83df2401-f4e9-40ad-b637-3af5dce54532)
+
+
+You can find the code for model training in the `model_classificator.ipynb` file.
 
 
 
